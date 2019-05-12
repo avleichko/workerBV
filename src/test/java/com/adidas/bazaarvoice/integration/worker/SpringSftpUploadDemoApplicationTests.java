@@ -56,7 +56,7 @@ public class SpringSftpUploadDemoApplicationTests {
     @Test
     public void testUpload() throws IOException {
         // Prepare phase
-        Path tempFile = Files.createTempFile("UPLOAD_TEST", ".csv");
+        Path tempFile = Files.createTempFile("UPLOAD_TEST", ".xml");
 
         // Prerequisites
         assertEquals(0, Files.list(sftpFolder).count());
