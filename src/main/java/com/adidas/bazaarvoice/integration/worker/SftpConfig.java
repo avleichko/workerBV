@@ -36,6 +36,7 @@ public class SftpConfig {
     private String sftpPasword;
     @Value("${sftp.remote.directory:/}")
     private String sftpRemoteDirectory;
+
     @Bean
     public SessionFactory<ChannelSftp.LsEntry> sftpSessionFactory() {
         DefaultSftpSessionFactory factory = new DefaultSftpSessionFactory(true);
